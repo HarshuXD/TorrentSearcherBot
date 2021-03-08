@@ -22,7 +22,7 @@ Special thanks to [Sumanjay](https://github.com/cyberboysumanjay) for his wonder
 
 ## Community
 
-- Catch On Telegram : [@Torrent_SearcherBot](https://telegram.dog/Torrent_SearcherBot)
+- Catch On Telegram : [@khtorsearchbot](https://telegram.dog/khtorsearchbot)
 - Telegram Support Chat : [@KeralasBots](https://telegram.dog/KeralasBots)
 - Telegram Updates Channel : [KeralaBotsNews](https://telegram.dog/KeralaBotsNews)
 
