@@ -1,8 +1,21 @@
 import os
+from dotenv import load_dotenv
+import logging
 
-TOKEN = os.environ.get("BOT_TOKEN")
-API_HASH = os.environ.get("API_HASH")
-API_ID = int(os.environ.get("API_ID"))
-START_MESSAGE = os.environ.get("START_MESSAGE", "<b>Hi ! I am a simple torrent searcher using @sjprojects's Torrent Searcher api.\n\n\nMade with 🐍 by @KeralasBots</b>")
-FOOTER_TEXT = os.environ.get("FOOTER_TEXT", "<b>Made with ❤️ by @KeralasBots</b>")
+load_dotenv('config.env')
+
+LOGGER = logging.getLogger(__name__)
+
+def getConfig(name: str):
+    return os.environ[name]
+try:
+    TOKEN = getConfig('BOT_TOKEN')
+    API_HASH = getConfig('API_HASH')
+    API_ID = int(getConfig('API_ID'))
+except KeyError as e:
+    LOGGER.error("One or more env variables missing! Exiting now")
+    exit(1)
+
+START_MESSAGE = getConfig("START_MESSAGE")
+FOOTER_TEXT = getConfig("FOOTER_TEXT")
 TORRENTS = {}
