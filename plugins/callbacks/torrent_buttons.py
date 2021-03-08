@@ -4,7 +4,7 @@ from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiohttp.client_exceptions import ContentTypeError
 
-from config import TORRENTS, FOOTER_TEXT
+from app import TORRENTS, FOOTER_TEXT
 from helpers.torrent import torrent_search
 
 

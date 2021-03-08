@@ -2,7 +2,7 @@ import logging
 
 from pyrogram import Client
 
-from config import API_ID, API_HASH, TOKEN
+from app import API_ID, API_HASH, TOKEN
 
 logging.basicConfig(
     level=logging.INFO,

@@ -11,15 +11,18 @@
     "env": {
         "API_ID": {
             "description": "Get it from my.telegram.org",
-            "value": ""
+            "value": "",
+            "required": true
         },
         "API_HASH": {
             "description": "Get it from my.telegram.org",
-            "value": ""
+            "value": "",
+            "required": true
         },
         "BOT_TOKEN": {
             "description": "Your bot token",
-            "value": ""
+            "value": "",
+            "required": true
         },
         "START_MESSAGE": {
             "description": "",

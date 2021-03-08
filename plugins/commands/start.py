@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from config import START_MESSAGE
+from app import START_MESSAGE
 
 
 @Client.on_message(filters.command("start"))
